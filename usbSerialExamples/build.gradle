@@ -5,10 +5,10 @@ android {
     buildToolsVersion '25.0.0'
 
     defaultConfig {
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 22
 
-       // testApplicationId "com.hoho.android.usbserial.examples"
+        // testApplicationId "com.hoho.android.usbserial.examples"
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
     }
 
@@ -21,4 +21,6 @@ android {
 
 dependencies {
     compile project(':usbSerialForAndroid')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support.constraint:constraint-layout:1.1.2'
 }
